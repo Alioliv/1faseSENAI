@@ -1,12 +1,5 @@
-function somar(){
 
-}
-
-function diminuir(){
-    
-}
-
-function calcularEcoMoedas(){
+ function calcularEcoMoedas(){
     let brinquedos, moedas
 
     brinquedos = Numbe(prompt("Quantos brinquedos voce trouxe? "))
