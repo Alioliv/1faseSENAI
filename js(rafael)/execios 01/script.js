@@ -14,7 +14,7 @@ function somar(){
 }
 
 function diminuir(){
-    let n1, n2
+    let n1, n2, diferenca
     n1 = Number(prompt("primeiro numero: "))
     n2 = Number(prompt("segundo numero: "))
     diferenca = n1 - n2
