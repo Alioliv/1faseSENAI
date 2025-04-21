@@ -11,7 +11,7 @@ let ingrediente1 = (prompt("Digite o primerio ingrediente:"))
 
 let ingrediente2 = (prompt("Digite o segundo ingrediente:"))
 
-if(ingrediente1 == "pele de sabo" && ingrediente2 == "asa de morcego"){
+if(ingrediente1 == "pele de sapo" && ingrediente2 == "asa de morcego"){
     console.log("poção pronta")
 }else{
     console.log("Miatura errada!")
