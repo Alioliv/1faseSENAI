@@ -4,9 +4,9 @@
 // Mostre o resultado da soma desses dois números usando alert .
 
 function soma(){
-    let (prompt("Digite um número:"))
-    let (prompt("Digite o segundo número:"))
-    let soma= Number(prompt(num1 + num2))
+    let num1 = Number(prompt("Digite um número:"))
+    let num2 = Number(prompt("Digite o segundo número:"))
+    let soma= (prompt(num1 + num2))
     alert("resuldato da soma: " + soma)
 }
     
