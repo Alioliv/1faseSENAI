@@ -5,7 +5,9 @@
 
 function vereficar(){
     let num1 = Number(prompt("Digite um numero: "))
-    
-
-    alert()
-}
+    let num = num1 / 2
+    if(num % 2 === 0 ){
+        alert("Numero par")
+    }else if(num % 2 !== 0)
+        alert("Numero impar")
+    }
