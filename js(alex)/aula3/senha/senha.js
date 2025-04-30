@@ -13,5 +13,5 @@ function Mostrar(){
         senha = senha + gerarCaracterAleatorio()
         quantidae = quantidade - 1
     }
-    alert("A senhaé: " + senha)
+    alert("A senha é: " + senha)
 }
