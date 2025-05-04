@@ -1,8 +1,13 @@
 // Imprima “Olá, mundo!” 5 vezes.
 
-function oláMundo(){
-    let texto = "Olá Mundo"
-    while(texto){
-        alert( texto )
-    }
+function contador(){
+    let contador = 5
+
+while(contador >= 0) {
+    alert("Olá Mundo " + contador)
+    contador--
+}
+
+alert("")
+
 }

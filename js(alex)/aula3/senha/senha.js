@@ -7,7 +7,7 @@ function gerarCaracterAleatorio(){
 
 
 function Mostrar(){
-    let quantidae = Number(prompt("Informe quantos caracteres sua senha deve ter - de1 a 1:"))
+    let quantidae = Number(prompt("Informe quantos caracteres sua senha deve ter - de 1 a 10:"))
     let senha = ""
     while(quantidae > 0){
         senha = senha + gerarCaracterAleatorio()
