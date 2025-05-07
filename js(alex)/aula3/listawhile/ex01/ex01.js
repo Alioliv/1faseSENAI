@@ -6,7 +6,6 @@
         while(num >= 20){
         alert("Numeros par", num += 2)
         
-    }console.log(num); num += 2
 } */
 
     function Mostrar(){
