@@ -72,11 +72,52 @@ function ex23(){
     let num = 0 
 
     while (num > 10) {
-        alert("O número é: "+ num)
-        num++
-        if (num === 10) {
+        if(num === 10) {
             alert("Lançamento")
+        }else{
+            alert("O número é: "+ num)
         }
-    }
+        num ++;
+ }
 }
 
+/*11. Conte até 30 e diga “Pulando!” para múltiplos de 7*/
+
+function ex24(){
+    let num = 0
+    while(num <= 30){
+        if(num % 7 == 0){
+            alert(" ")
+        }else{
+            alert("Número pulando os multiplos de 7 até 30: " + num)
+        }
+        num ++;
+ }
+}
+
+/*12. Conte de 1 a 20 e diga “Especial!” para múltiplos de 2 e 3 ao mesmo tempo.*/
+function ex25(){
+    let num = 0
+    while(num <= 20){
+        if(num % 2 == 0 || num % 3 == 0){
+            alert("Número especial " + num)
+        }else{
+            alert("Números : " + num)
+        }
+        num ++;
+ }
+}
+
+/*13. Conte de 1 a 10 e diga se o número é menor ou maior que 5.*/
+
+function ex26(){
+    let num = 1
+    while(num <= 0){
+        if(num <=5 ){
+            alert("Número menor que 5: " + num)
+        }else{
+            alert ("Número maior que 5: " + num)
+        }
+        num ++;
+ }
+}
