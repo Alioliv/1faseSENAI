@@ -1,18 +1,19 @@
 /*6. Some os números de 1 a 100, mas pare se a soma passar de 400.*/
  
 function ex19(){
+    let num = 1
     let soma = 0
-    let cont = 1 // iniciação da variavel de controle 
-    
-    while(cont <= 100 && soma <= 400){ // setar a condição de repetição
-        soma = soma + cont
-        console.log("cont: " + cont);
-        console.log("cont: " + soma);
-        console.log("==================");
-        cont ++ // modificação de  contagem 
-        
+
+    while (num <= 100){
+        soma += num
+        alert ("A soma dos números de 1 a 100 é: " + soma)
+        num++
+
+        if (soma >= 400){
+            alert ("A soma ultrapassou 400, o loop será encerrado.")
+            break
+        }
     }
-    console.log("soma: " + soma);
     
 }
 
