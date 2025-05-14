@@ -121,3 +121,4 @@ function ex26(){
         num ++;
  }
 }
+
