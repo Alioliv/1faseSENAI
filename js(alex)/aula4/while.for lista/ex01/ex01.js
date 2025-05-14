@@ -11,7 +11,7 @@ dirigir" se for maior de 18 e tiver carteira.*/
         const element = array[idade];
         
     }*/
-/*function condicao(){
+function condicao(){
     let  idade = 0
     let teach = false 
 
@@ -22,5 +22,5 @@ dirigir" se for maior de 18 e tiver carteira.*/
         }else{alert("ainda nao pode digirir ")
     }
     }
-}*/
+}
 
