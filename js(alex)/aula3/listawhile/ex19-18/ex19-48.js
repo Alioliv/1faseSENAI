@@ -41,12 +41,13 @@ function ex20(){
 /*8. Conte os números de 1 a 50, mas pare se chegar a 30.*/
 
 function ex21(){
-     let num = 1
+    let num = 0
+
     while (num <= 50){
-        alert ("O número é: " + numero)
-        num++
+        alert ("números de 1 a 50: " + num)
+        num ++;
         if (num === 30){
-            alert ("O número 30 foi encontrado")
+            alert ("Número encontrado: " + num)
             break
         }
     }
@@ -57,7 +58,7 @@ function ex21(){
 function ex22(){
      let num = 0
     while (num <= 100){
-        alert ("O número é: " + numero)
+        alert ("O número é: " + num)
         num++
         if (num === 50){
             alert ("O número 50 foi encontrado")
@@ -70,15 +71,13 @@ function ex22(){
 
 function ex23(){
     let num = 0 
-
-    while (num > 10) {
+    while (num < 10) {
+        alert("O número é: "+ num)
+        num++
         if(num === 10) {
-            alert("Lançamento")
-        }else{
-            alert("O número é: "+ num)
+            alert("Lançamento"+ num)
         }
-        num ++;
- }
+    }
 }
 
 /*11. Conte até 30 e diga “Pulando!” para múltiplos de 7*/
@@ -112,7 +111,7 @@ function ex25(){
 
 function ex26(){
     let num = 1
-    while(num <= 0){
+    while(num <= 10){
         if(num <=5 ){
             alert("Número menor que 5: " + num)
         }else{
@@ -122,3 +121,31 @@ function ex26(){
  }
 }
 
+/*14. Faça um loop que pare ao chegar em um número aleatório entre 1 e 10
+(simulado).*/
+
+function ex27(){
+    let num = 1
+    let numeroAleatorio =  Math.floor(Math.random() * 10) + 1; // número entre 1 e 10
+    while (num <= 10) {
+        alert("Número: "+ num)
+        num++;
+        if (num === numeroAleatorio ) {
+        alert("numero aleatorio: "+ numeroAleatorio)
+        break
+    }
+    }
+}
+
+/*15. Mostre todos os divisores de um número X (por exemplo, 24)*/
+
+function ex28(){
+    let num = 1
+    let n = Number(prompt(" Digite um número para saber se 24 é divisivel:"))
+    while (n <= num ) {
+        if (num % n === 0 ) {
+        alert("Números divisores: "+ n)
+    }
+    }
+    n++;
+}
