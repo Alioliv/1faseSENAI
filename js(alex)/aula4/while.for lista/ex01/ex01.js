@@ -11,7 +11,7 @@ dirigir" se for maior de 18 e tiver carteira.*/
         const element = array[idade];
         
     }*/
-function condicao(){
+function ex01(){
     let  idade = 0
     let teach = false 
 
@@ -24,3 +24,43 @@ function condicao(){
     }
 }
 
+/*2. Verifique se um número digitado é positivo e par*/ 
+
+function ex02() {
+    let num = Number(prompt("Digite um número: ")) 
+    if (num >= 1 && num % 2 === 0) {
+        alert(" Numero é positivo e par: " + num)
+    }else{
+        alert("esse nao é positivo ou par ")
+    }
+    }
+
+
+
+/*3. Solicite um nome de usuário e uma senha. Exiba "Acesso permitido" se o
+nome for "admin" ou a senha for "1234".*/ 
+
+function ex03(){
+    let user = prompt("Digite a o usúario: ")
+    let senha = prompt("Digite a senha: ")
+
+    if (user == "adim" && senha === 1234){
+        alert("acesso permitido")
+    }else{
+        alert ("acesso negado")
+    }
+    }
+    
+/*4. Peça dois números. Exiba "Valores válidos" se um for positivo e o outro for
+negativo.*/
+
+function ex04(){
+    let num1 = Number(promt("Digite o primero número: "))
+    let num2 = Number(promt("Digite o segundo numero: "))
+    if (num1 >= 1 && num2 <= 0){
+        alert("Valores vadilos")
+    }else{
+        alert("Valores errados")
+    }
+
+}
