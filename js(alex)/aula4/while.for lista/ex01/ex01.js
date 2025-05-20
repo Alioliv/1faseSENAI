@@ -64,3 +64,19 @@ function ex04(){
     }
 
 }
+
+/*5. Peça uma nota. Exiba "Aprovado" se a nota for maior que 6 e menor ou igual a
+10.*/
+
+function ex06(){
+    let nota = Number(promt('Digite sua nota'))
+
+    if (nota >= 6) {
+        alert("aprovado")
+    }else if (nota <= 5) {
+        alert("Reprovado")
+    }
+}
+
+
+
