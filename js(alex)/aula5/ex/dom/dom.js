@@ -9,7 +9,16 @@ function ex() {
     let resultado = document.getElementById("resultado")
 
     resultado = (nota1 + nota2 + nota3 + nota4) / 4
-    resultado.innerText = "Sua media é : " + resultado 
+    resultado.innerText = "Sua media é : "+ resultado
+
 
 
 }
+
+
+/* imc 5 inputs nome, idade, sexo, peso, altura.*/
+
+function imc(){
+    
+}
+
