@@ -1,0 +1,8 @@
+function mostarLogin(){
+    document.getElementById("login").style.display= "flex"
+     document.getElementById("cadastro").style.display= "name"
+}
+function mostarCadastro(){
+    document.getElementById("login").style.display= "name"
+     document.getElementById("cadastro").style.display= "flex"
+}

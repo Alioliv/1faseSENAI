@@ -1,0 +1,21 @@
+ #login{
+    display: block;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+ }
+
+ #cadastro{
+    display: block;
+    border:1px solid #666;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 100px;
+
+ }
