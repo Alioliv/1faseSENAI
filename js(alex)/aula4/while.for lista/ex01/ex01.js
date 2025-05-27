@@ -1,16 +1,6 @@
 /*1. Peça ao usuário sua idade e se ele tem carteira de motorista. Exiba "Pode
 dirigir" se for maior de 18 e tiver carteira.*/
 
-
-/*let idade = Number(prompt("Digite sua idade: "))
-    let carteira =  prompt("Digite se tem carteira: ")
-    while (idade >= 18) {
-       alert("") 
-    }
-    for (let idade = 0; idade <= 18 .length; idade++) {
-        const element = array[idade];
-        
-    }*/
 function ex01(){
     let  idade = 0
     let teach = false 
@@ -78,5 +68,15 @@ function ex06(){
     }
 }
 
+// Imprima todos os números de 1 a 100 que são pares e múltiplos de 3.
+
+function ex(){
+
+    for(let i=1; i <=100; i++){
+        if(i % 2 == 0 && i % 3 == 0){
+            console.log(i)
+        }
+    }
+}
 
 

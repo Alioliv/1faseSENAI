@@ -1,43 +1,31 @@
-#a{
+a{
     text-decoration: none;
-    background-color: black;
-    color: aliceblue;
-    padding: 10px;
-    border-radius: 10px;
-
-
+    background-color: rgb(255, 141, 226);
+    color: white;
+    padding: 10px; 
+    border: solid 1px black;
 }
 
+a:hover{
+    background-color: rgb(212, 100, 208);
+    scale: 1.2; 
+    transition: 200ms ease-in;
+}
 
-.container{
+.container {
     display: flex;
     margin-top: 20px;
     flex-direction: column;
-    background-color: rgb(242, 130, 212);
-    width: 100px;
-    padding: 10px  0px 10px 10px;
-    gap: 10px;
-
+    background-color: rgb(78, 47, 64);
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    gap: 10px 
 }
 
-.container1{
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    background-color: rgb(242, 130, 212);
-    width: 100px;
-    padding: 10px  0px 10px 10px;
+.container2 {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(224, 157, 220);
     gap: 10px;
-
-}
-
-.container2{
-    display: flex;
-    margin-top: 20px;
-    flex-direction: column;
-    background-color: rgb(242, 130, 212);
-    width: 100px;
-    padding: 10px  0px 10px 10px;
-    gap: 10px;
-
 }

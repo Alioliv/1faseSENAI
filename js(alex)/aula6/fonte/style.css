@@ -1,0 +1,14 @@
+h1{
+ color: rgb(75, 1, 48);  
+ text-align: center;
+ padding: 10px; 
+ border: solid 1px black;
+ 
+}
+
+p{
+  font-family: "Playwrite HU", cursive;
+  font-optical-sizing: auto;
+  font-weight: 348;
+  font-style: normal;
+}
