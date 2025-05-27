@@ -1,0 +1,43 @@
+#a{
+    text-decoration: none;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: rgb(242, 130, 212);
+    width: 100px;
+    padding: 10px  0px 10px 10px;
+    gap: 10px;
+
+}
+
+.container1{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: rgb(242, 130, 212);
+    width: 100px;
+    padding: 10px  0px 10px 10px;
+    gap: 10px;
+
+}
+
+.container2{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    background-color: rgb(242, 130, 212);
+    width: 100px;
+    padding: 10px  0px 10px 10px;
+    gap: 10px;
+
+}
