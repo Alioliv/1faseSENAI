@@ -1,0 +1,55 @@
+.container_principal{
+    display: flex;
+    width: 1001%;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_cadastro{
+ background-color: aquamarine;
+ border: none;
+ border-radius: 10px;
+ max-height: 50px;
+ cursor: pointer;
+
+}
+
+.ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li{
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.editar{
+    cursor: pointer;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.conteudo_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.container.cadastro{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

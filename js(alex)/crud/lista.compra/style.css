@@ -1,0 +1,90 @@
+.container_principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tituloLista{
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloCadastro{
+    display: flex;
+    gap: 10px; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao_cadastro {
+
+    background-color: rgb(224, 97, 188);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    max-height: 65px;
+    cursor: pointer;
+}
+
+
+.botao_voltar, .botao_cadastrar {
+
+
+
+    background-color: rgb(206, 134, 186);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    max-height: 65px;
+    cursor: pointer;
+}
+
+
+.botao_cadastro:hover, .botao_voltar:hover, .botao_cadastrar:hover{
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+.conteudo_lista{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+ol{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.editar , .deletar{
+    cursor: pointer;
+}
+
+.conteudo_cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container_cadastro{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
