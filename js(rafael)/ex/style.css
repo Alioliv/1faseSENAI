@@ -4,32 +4,33 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* border: 1px solid #666; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     width: 300px;
     min-height: 300px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);/* sombra na volta*/
- }
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
+}
 
- #cadastro{
-    display: flex;
+#cadastro{
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    display: none;
     border: 1px solid #666;
+    /* background-color: aqua; */
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     width: 300px;
     min-height: 100px;
- }
+}
 
-.containerinput{
+.containerInput{
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -39,16 +40,16 @@ input{
 }
 
 button{
-    background-color: rgb(232, 120, 180);
+    background-color: #ee00ba;
     height: 30px;
     border-radius: 5px;
     border: none;
     padding: 10px;
 }
-
-button.hover{
-    background-color: rgb(219, 92, 147);
+button:hover{
+    background-color: rgb(227, 88, 210);
     scale: 1.1;
+    /* color: #fff; */
 }
 
 body{
@@ -56,11 +57,4 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-shadow: border box;
-    
 }
