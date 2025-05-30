@@ -12,18 +12,18 @@
         <button onclick="mostrarCadastro()">Cadastro</button>
         <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1>Login/Cadastro</h1>
+    <h1> teste Login/Cadastro</h1>
     <section id="login">
         <h2>Login</h2>
         <div class="containerInput">
             <label for="">Nome</label>
-            <input type="text">
+            <input type="text" id="inputLogNome">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inputLogSenha">
         </div>
-        <button>Logar</button>
+        <button onclick="logar()">Logar</button>
 
     </section>
 
@@ -31,17 +31,17 @@
         <h2>Cadastro</h2>
         <div class="containerInput">
             <label for="">Nome</label>
-            <input type="text">
+            <input type="text" id="inputCadNome">
         </div>
         <div class="containerInput">
             <label for="">E-mail</label>
-            <input type="password">
+            <input type="email" id="inputCadEmail">
         </div>
         <div class="containerInput">
             <label for="">Senha</label>
-            <input type="password">
+            <input type="password" id="inputCadSenha">
         </div>
-        <button>Logar</button>
+        <button onclick="cadastrar()"> cadastrar</button>
     </section>
 
     <section id="produtos">
