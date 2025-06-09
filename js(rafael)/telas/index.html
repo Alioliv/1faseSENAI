@@ -7,22 +7,25 @@
     <title>Telas</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <button onclick="mostrarLogin()">Login</button>
         <button onclick="mostrarCadastro()">Cadastro</button>
         <button onclick="mostrarProdutos()">Produtos</button>
     </nav>
-    <h1> teste Login/Cadastro</h1>
-    <section id="login">
-        <h2>Login</h2>
-        <div class="containerInput">
-            <label for="">Nome</label>
-            <input type="text" id="inputLogNome">
-        </div>
+    
+    <main>
+
+        <section id="login">
+            <h2>Login</h2>
+            <div class="containerInput">
+                <label for="">Nome</label>
+                <input type="text" id="inputLogNome">
+            </div>
         <div class="containerInput">
             <label for="">Senha</label>
             <input type="password" id="inputLogSenha">
         </div>
+        <button onclick="mostrarCadastro()" class="bt_secundario">Não tem cadastro?</button>
         <button onclick="logar()">Logar</button>
 
     </section>
@@ -41,13 +44,16 @@
             <label for="">Senha</label>
             <input type="password" id="inputCadSenha">
         </div>
+        <button onclick="mostrarLogin()" class="bt_secundario">Já tenho Cadastro..</button>
         <button onclick="cadastrar()"> cadastrar</button>
     </section>
 
     <section id="produtos">
-        <h2>produtos</h2>
+        <h2>Produtos</h2>
     </section>
 
+    </main>
+    
     <script src="script.js"></script>
 </body>
 </html>
