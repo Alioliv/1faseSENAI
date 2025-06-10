@@ -3,23 +3,34 @@
 //document.getElementById("inputLogNome").focus()
 //mostrarLogin()
 
-inicializar()
+// let nomesTeste = [ "usuario 1", "usuaro 2"] // estrutura de dados ("") push alterar 
 
-let usuario = {
+/*let usuario = {
     nome: "",
     email: "",
     senha: "",
-}
+}*/
+
+// Array começa a contar em 0
+
+inicializar()
+
+let usuarios = []
 
 function cadastrar(){
-    usuario.nome = document.getElementById("inputCadNome").value
-    usuario.email = document.getElementById("inputCadEmail").value
-    usuario.senha = document.getElementById("inputCadSenha").value
+    let usuario ={
+      nome : document.getElementById("inputCadNome").value,
+      email : document.getElementById("inputCadEmail").value,
+      senha : document.getElementById("inputCadSenha").value
+    }
+
+    usuarios.push(usuario)
+    
     alert("Cadastro com sucesso! :D")
+    
+    console.log(usuarios)
 
-    console.log("usuario");
-
-    limparImputs()
+    limparinput()
     mostrarLogin()
     
 }
@@ -27,14 +38,18 @@ function cadastrar(){
 function logar() {
     let nome = document.getElementById("inputLogNome").value
     let senha = document.getElementById("inputLogSenha").value
-    
-    if ((nome === usuario.nome || nome === usuario.email) && senha === usuario.senha) {
-        alert("login efetuado com sucesso!")
-        mostrarProdutos()
-        limparinput()
-    }else{
-        alert("Login não efetuado, sem sucesso!")
+    for( let i=0; i<usuarios.length; i++){
+
+        if ((nome === usuarios[i].nome || nome === usuarios.email) && senha === usuarios.senha [i].senha){
+           
+            alert("login efetuado com sucesso!")
+            mostrarProdutos()
+            limparinput()
+        }else{
+            alert("Login não efetuado, sem sucesso!")
+        }
     }
+    
 }
 
 
