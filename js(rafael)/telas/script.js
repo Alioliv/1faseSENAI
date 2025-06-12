@@ -25,29 +25,32 @@ function cadastrar(){
     }
 
     usuarios.push(usuario)
+    limparInputs()
+    mostrarLogin()
     
     alert("Cadastro com sucesso! :D")
     
     console.log(usuarios)
-
-    limparinput()
-    mostrarLogin()
-    
+ 
 }
 
 function logar() {
-    let nome = document.getElementById("inputLogNome").value
-    let senha = document.getElementById("inputLogSenha").value
+    let nomeMail= document.getElementById("inpLogNome").value
+    let senha = document.getElementById("inpLogSenha").value
+
     for( let i=0; i<usuarios.length; i++){
 
-        if ((nome === usuarios[i].nome || nome === usuarios.email) && senha === usuarios.senha [i].senha){
+        if ((nomeMail === usuarios[i].nome || nomeMail === usuarios[i].email) && senha === usuarios.senha [i].senha){
            
-            alert("login efetuado com sucesso!")
+            alert("login efetuado com sucesso!" + usuarios[i].nome)
             mostrarProdutos()
-            limparinput()
-        }else{
-            alert("Login não efetuado, sem sucesso!")
+            limparInputs()
+
+             // document.getElementById('navbar').style.display = 'block'
         }
+        //else{
+        //   alert("Login não efetuado, sem sucesso!")
+        //}
     }
     
 }
@@ -56,13 +59,13 @@ function logar() {
 function mostrarLogin(){
     esconderTodos()
     document.getElementById("login").style.display = 'flex'
-    document.getElementById("inputLogNome").focus()
+    document.getElementById("inpLogNome").focus()
 
 }
 function mostrarCadastro(){
     esconderTodos()
     document.getElementById("cadastro").style.display = 'flex'
-    document.getElementById("inputCadNome").focus()
+    document.getElementById("inpCadNome").focus()
    
 }
 
@@ -80,14 +83,13 @@ function esconderTodos(){
     // esconde pag
 }
 
-function limparinput(){
-    document.getElementById("inputCadNome").value
-    document.getElementById("inputCadEmail").value
-    document.getElementById("inputCadSenha").value
+function limparInputs(){
+    document.getElementById("inpCadNome").value = ' '
+    document.getElementById("inpCadEmail").value = ' '
+    document.getElementById("inpCadSenha").value = ' '
 
-
-    document.getElementById("inputLogNome").value 
-    document.getElementById("inputLogSenha").value
+    document.getElementById("inpLogNome").value = ' '
+    document.getElementById("inpLogSenha").value = ' '
 }
 
 function inicializar(){

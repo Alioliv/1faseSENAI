@@ -14,6 +14,7 @@
 }
 
 #cadastro{
+    /* display: flex; */
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -26,14 +27,10 @@
     margin: 10px;
     width: 300px;
     min-height: 100px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.497);
 }
 
 #navbar{
     display: none;
-    margin: 10px;
-    padding: 10px;
-
 }
 
 #produtos{
@@ -52,14 +49,14 @@ input{
 }
 
 button{
-    background-color: #ee00ba;
+    background-color: #ee0083;
     height: 30px;
     border-radius: 5px;
     border: none;
     padding: 10px;
 }
 button:hover{
-    background-color: rgb(227, 88, 210);
+    background-color: rgb(213, 152, 187);
     scale: 1.1;
     /* color: #fff; */
 }
@@ -76,14 +73,15 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
-.bt_secundario{
-    background-color: #e3b1d8;
+
+.bt-secundario{
+    background-color: #eee;
 }
+
 main{
     display: flex;
     justify-content: center;
-    width: 100vw;
     align-items: center;
+    width: 100vw;
     min-height: 100vh;
-
 }
