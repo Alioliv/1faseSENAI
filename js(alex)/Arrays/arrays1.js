@@ -1,4 +1,4 @@
-let nome = [ "ana", "clara","alice","beatriz", "maria","mia"]
+let nomes = [ "ana", "clara","alice","beatriz", "maria","mia"]
 console.log(nomes[10])
 console.log(nomes.length)
 nomes.forEach((element, index) =>

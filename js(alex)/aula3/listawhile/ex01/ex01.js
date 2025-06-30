@@ -8,16 +8,27 @@
         
 } */
 
-    function Mostrar(){
-        let numero = 1; // Começa com 1
-        let resultado = ""; // Vai guardar os números pares em forma de texto
-        
-        while (numero <= 20) {
-          if (numero % 2 === 0) {
-            resultado += numero + "\n"; // Adiciona o número com quebra de linha
-          }
-          numero++; // Vai para o próximo número
-        }
-        
-        alert("Números pares de 1 a 20:\n\n" + resultado);
+ function Mostrar(){
+  let numero = 1; // Começa com 1
+  let resultado = ""; // Vai guardar os números pares em forma de texto
+  while (numero <= 20) {
+    if (numero % 2 === 0) {
+      resultado += numero + "\n"; // Adiciona o número com quebra de linha
     }
+    numero++; // Vai para o próximo número
+  }
+  
+  alert("Números pares de 1 a 20:\n\n" + resultado);
+        
+}
+
+
+function ex() {
+
+  let n1 = Number(prompt("Digite o primeiro número: "))
+  let n2 = Number(prompt("Digite o segundo número: "))
+  let total = n1 + n2 
+
+  alert('a soma dos dois numeros é de '+ total)
+  
+}
