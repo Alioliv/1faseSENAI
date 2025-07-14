@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 id="boas-vindas"></h2>
+
+  <!-- 1. Contador Persistente -->
+  <div>
+    <h3>1. Contador</h3>
+    <button onclick="alterarContador(-1)">−</button>
+    <span id="contador">0</span>
+    <button onclick="alterarContador(1)">+</button>
+  </div>
+
+  <!-- 2. Texto Salvo -->
+  <div>
+    <h3>2. Texto Salvo</h3>
+    <textarea id="textoSalvo"></textarea>
+  </div>
+
+  <!-- 3. Checkbox Persistente -->
+  <div>
+    <h3>3. Lista de Tarefas</h3>
+    <ul id="lista-tarefas"></ul>
+    <input id="novaTarefa" placeholder="Nova tarefa" />
+    <button onclick="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  <!-- 5. Escolha de Cor -->
+  <div>
+    <h3>5. Escolha de Cor</h3>
+    <button class="cor-btn" onclick="mudarCor('lightblue')">Azul</button>
+    <button class="cor-btn" onclick="mudarCor('lightgreen')">Verde</button>
+    <button class="cor-btn" onclick="mudarCor('lightpink')">Rosa</button>
+  </div>
+
+  <!-- 6. Modo Noturno -->
+  <div>
+    <h3>6. Modo Escuro</h3>
+    <button onclick="alternarModoEscuro()">Modo Escuro</button>
+  </div>
+
+  <!-- 7. Visita Diária -->
+  <div id="mensagem-visita">
+    <h3>7. Visita Diária</h3>
+    <p id="mensagemDia"></p>
+  </div>
+
+  <!-- 8. Última Visita -->
+  <div>
+    <h3>8. Última Visita</h3>
+    <p id="ultima-visita"></p>
+  </div>
+
+  <!-- 9. Mensagem Personalizada -->
+  <div>
+    <h3>9. Mensagem Personalizada</h3>
+    <input id="mensagemInput" placeholder="Digite sua mensagem" />
+    <button onclick="salvarMensagem()">Salvar</button>
+    <p id="mensagem-personalizada"></p>
+  </div>
+
+  <!-- 10. Número Secreto -->
+  <div>
+    <h3>10. Adivinhe o Número Secreto (1 a 10)</h3>
+    <input type="number" id="palpite" />
+    <button onclick="verificarPalpite()">Tentar</button>
+    <p id="resposta-palpite"></p>
+  </div>
+
+  <script src="localStorage.js"></script>
+</body>
+</html>

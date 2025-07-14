@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+textarea {
+  width: 100%;
+  height: 60px;
+}
+.cor-btn {
+  padding: 5px 10px;
+  margin: 5px;
+}
+.dark {
+  background-color: #111;
+  color: white;
+}

@@ -143,7 +143,7 @@ console.log(numMaior)
 
 //30. "Achatamento": transforme um array com subarrays em um único array plano (um nível só).
 let arraydearray = [34, 434, [342, 3, 656,4], [2, [45,34, [344,343]]]]
-let arrays = arraydearray.flat(3)
+let arrays = arraydearray.flat(3)// acessar sub arrys 
 console.log(arrays)
 
 //31. A partir de uma lista de idades, retorne apenas os adultos (idade ≥ 18).
@@ -174,7 +174,7 @@ console.log(inversa(arry9))
 
 
 
-//1. Filtro e transformação com ordenação (Capacidades: 1, 2, 3, 4, 5, 7, 8, 9, 10)
+
 //● Crie um novo array com as disciplinas que possuem mais de 7 caracteres, convertidas para letras
 //maiúsculas e ordenadas.
 
@@ -229,8 +229,11 @@ const estudantes = [
   { nome: "Joana", notas: [9, 6, 7] }
 ];
 
+
+// 
+
   
-//37. Conte as vogais em cada string de um array.
+//37. Conte as vogais em cada string de um array.n
 //38. Gere um array com os 10 primeiros números pares.
 //39. Gere um array com os quadrados dos números de 1 a 10.
 //40. Compare dois arrays e retorne os elementos que existem em ambos.
