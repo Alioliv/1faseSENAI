@@ -49,12 +49,32 @@ const estoque = transacoes.reduce((acc, transacoes) =>{
 
 // 4 ● Crie uma função que aplica 10% de desconto em produtos com valor > R$100
 
+/*const produto = [
+    {nome: "cadeira", valor: 150},
+    {nome: "lapis", valor: 5}
+]*/
+
 const produto = [
     {nome: "cadeira", valor: 150},
     {nome: "lapis", valor: 5}
-]
+];
 
-function desconto(produto) { 
+function aplicarDesconto(produtos) {
+    return produtos.map(item => {
+        if (item.valor > 100) {
+            return {
+                ...item,
+                valor: item.valor * 0.9 // aplica 10% de desconto
+            };
+        }
+        return item; // retorna o item sem alterações
+    });
+}
+
+const produtosComDesconto = aplicarDesconto(produto);
+console.log(produtosComDesconto);
+
+/*function desconto(produto) { 
     return produto.map(produto =>{
         if(produto.valor > 100)
             return {
@@ -68,7 +88,7 @@ function desconto(produto) {
   }
 
 const produtosComDesconto = aplicarDesconto(produto);
-console.log(produtosComDesconto);
+console.log(produtosComDesconto);*/
     
 
 //5 Verificações de dados 
