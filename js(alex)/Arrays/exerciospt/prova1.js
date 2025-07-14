@@ -74,21 +74,6 @@ function aplicarDesconto(produtos) {
 const produtosComDesconto = aplicarDesconto(produto);
 console.log(produtosComDesconto);
 
-/*function desconto(produto) { 
-    return produto.map(produto =>{
-        if(produto.valor > 100)
-            return {
-        ...produto,
-        valor: produto.valor * 0,9
-    }
-     } else {
-      // retorna o produto como está
-      return p;
-    });
-  }
-
-const produtosComDesconto = aplicarDesconto(produto);
-console.log(produtosComDesconto);*/
     
 
 //5 Verificações de dados 
@@ -108,7 +93,12 @@ const produto2 = [
     {nome: "Mouse", preco: 50}
 
 ];
+function buscarProduto(nome) {
+  return produto2.find(p => p.nome.toLowerCase() === nome.toLowerCase());
+}
 
+console.log(buscarProduto("Mouse")); // Retorna o objeto do mouse
+console.log(buscarProduto("Celular")); // undefined (não encontrado)
 
 //7. Listar tarefas pendentes 
 //● Filtre as tarefas não concluídas e liste com prefixo "Pendente: ...":
@@ -118,3 +108,9 @@ const tarefas = [
     {descricao: "Fazer prova", concluida: false},
     {descricao: "Enviar projeto", concluida: false}
 ];
+function buscarProduto(nome) {
+  return produtos2.find(p => p.nome.toLowerCase() === nome.toLowerCase());
+}
+
+console.log(buscarProduto("Mouse")); // Retorna o objeto do mouse
+console.log(buscarProduto("Celular")); // undefined (não encontrado)

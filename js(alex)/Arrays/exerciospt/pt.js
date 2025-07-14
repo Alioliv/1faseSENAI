@@ -172,6 +172,10 @@ console.log(inversa(arry9))
 
 //34. Rotacione os elementos de um array uma posição para a direita.
 
+let arr = [1, 2, 3, 4, 5];
+arr.unshift(arr.pop());// Remove o último elemento e coloca no começo
+console.log(arr); // [5, 1, 2, 3, 4]
+
 
 
 
@@ -233,16 +237,128 @@ const estudantes = [
 // 
 
   
-//37. Conte as vogais em cada string de um array.n
+//37. Conte as vogais em cada string de um array.
+
+let arry8 = ["a","b","c","e","f","g"]
+let vogais =  ["a", "e", "i", "o", "u"];
+
+let contagem = arry8.map(letra => vogais.includes(letra) ? 1 : 0);// includes retorna verdadeiro ou falso 
+
+console.log(contagem);
+
 //38. Gere um array com os 10 primeiros números pares.
+let arry10 = [1,2,3,4,5,6,7,8,9]
+let num9 = arry10.filter(n => n % 2 === 0)
+console.log(num9)
+
 //39. Gere um array com os quadrados dos números de 1 a 10.
+let arry11 = [1,2,3,4,5,6,7,8,9,10]
+let quadrados = arry11.map(n => n * n )
+console.log(quadrados)
+
 //40. Compare dois arrays e retorne os elementos que existem em ambos.
+let arry12 = [1,2,3,4,5,6]
+let arr13 = [1,2,7,8,9]
+let comparando = arry12.filter(n => arr13.includes(n));//includes() verifica se um valor existe dentro de um array.
+
+console.log(comparando);
+
 //41. Faça um array de objetos com nome e nota, e filtre os aprovados (nota ≥ 7).
+let arry14 = [
+  {nome: "Ana", nota:10},
+  {nome: "Clara", nota: 6 },
+  {nome: "Julia",nota:8 },
+  {nome: "Celine",nota: 9}
+]
+let aprovados = arry14.filter(n => n.nota >= 7)
+console.log(aprovados)
+
 //42. Crie uma função que embaralha os elementos de um array.
+let arry15 = [1,2,3,4,5,6,7]
+
+function embaralhar(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1)); // índice aleatório
+    [array[i], array[j]] = [array[j], array[i]]; // troca os elementos
+  }
+  return array;
+}
+
+let embaralhado = embaralhar([...arry15]); // usa spread para não alterar o original
+
+console.log(embaralhado);
+// mesma função outra maneira 
+
+let arry16 = [1, 2, 3, 4, 5, 6, 7];
+let embaralhado1 = arry15.sort(() => Math.random() - 0.5);//.sort() ordena o array.
+//Math.random() - 0.5 gera um valor positivo ou negativo aleatório.
+console.log(embaralhado1);
+
+
 //43. Verifique se um array está em ordem crescente.
+let arry18 = [2, 3, 7, 4, 9, 1, 8];
+
+let estaCrescente = arry18.every((valor, i, arr) => {
+  return i === 0 || arr[i - 1] <= valor;
+});
+
+console.log(estaCrescente); 
+
 //44. Conte quantas strings têm mais de 5 letras em um array.
+let arry19 =["Ana","Juliana","Fernanda","maria"]
+let letras3 = arry19.filter(palavras => palavras.length > 5).length
+console.log(letras3)
+
 //45. Inverta as palavras de cada string de um array.
+
+let invertidas = arry19.map(palavra => palavra.split('').reverse().join(''));
+/*.split('') → transforma a string em array de letras.
+
+.reverse() → inverte o array de letras.
+
+.join('') → junta as letras de volta em uma string. */
+console.log(invertidas);
+
 //46. Crie um array com os dias da semana e exiba apenas os do fim de semana.
+let dias = ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"];
+
+let fimDeSemana = dias.filter(dia => dia === "sábado" || dia === "domingo");
+
+console.log(fimDeSemana);
+
 //47. Separe os números negativos e positivos de um array.
+let numeros = [5, -3, 9, -8, 0, 4, -1];
+
+let positivos = numeros.filter(n => n > 0);
+let negativos = numeros.filter(n => n < 0);
+console.log("Positivos:", positivos); 
+console.log("Negativos:", negativos);
+
 //48. Crie uma função que retorna o segundo maior número de um array.
+let numeros7 = [10, 5, 8, 12, 7, 12, 15];
+console.log(segundoMaior(numeros7)); // Saída: 12
+function segundoMaior(array) {
+  let unico = [...new Set(array)]; // Cria um array sem números repetidos
+  unico.sort((a, b) => b - a); // Ordena em ordem decrescente
+  return unico[1]; // Retorna o segundo elemento
+}
+ console.log(segundoMaior)
+
 //49. Conte quantas vezes cada letra aparece em um array de strings.
+let palavras = ["banana", "abacaxi", "uva"];
+
+function contarLetras(arr) {
+  let contador = {};
+  let tudo = arr.join('').toLowerCase(); // Junta todas as palavras em uma só string
+
+  // Percorre cada letra da string
+  for (let letra of tudo) {
+    if (letra >= 'a' && letra <= 'z') { // só letras (opcional)
+      contador[letra] = (contador[letra] || 0) + 1;
+    }
+  }
+
+  return contador;
+}
+
+console.log(contarLetras(palavras));
