@@ -48,11 +48,7 @@ const estoque = transacoes.reduce((acc, transacoes) =>{
 
 
 // 4 ● Crie uma função que aplica 10% de desconto em produtos com valor > R$100
-
-/*const produto = [
-    {nome: "cadeira", valor: 150},
-    {nome: "lapis", valor: 5}
-]*/
+//
 
 const produto = [
     {nome: "cadeira", valor: 150},
@@ -84,6 +80,15 @@ const usuario = [
     {nome: "Lucas", logando: false},
     {nome: "Beatriz", logando: true},
 ];
+// Verificar se algum usuário está logado
+const algumLogado = usuario.some(u => u.logando);
+console.log("Algum usuário está logado?", algumLogado ? "Sim" : "Não");
+
+// Verificar se todos os usuários estão logados
+const todosLogados = usuario.every(u => u.logando);
+console.log("Todos os usuários estão logados?", todosLogados ? "Sim" : "Não");
+
+
 
 //6. Função buscar produto 
 //● Crie uma função que busca um produto pelo nome:
@@ -107,10 +112,11 @@ const tarefas = [
     {descricao: "estudar JS", concluida: true},
     {descricao: "Fazer prova", concluida: false},
     {descricao: "Enviar projeto", concluida: false}
-];
-function buscarProduto(nome) {
-  return produtos2.find(p => p.nome.toLowerCase() === nome.toLowerCase());
-}
+]
 
-console.log(buscarProduto("Mouse")); // Retorna o objeto do mouse
-console.log(buscarProduto("Celular")); // undefined (não encontrado)
+// Filtrando as tarefas não concluídas e adicionando o prefixo "Pendente: ..."
+const tarefasPendentes = tarefas
+.filter(tarefa => !tarefa.concluida)  // Filtra tarefas não concluídas
+.map(tarefa => `Pendente: ${tarefa.descricao}`);  // Adiciona o prefixo
+
+console.log(tarefasPendentes);
