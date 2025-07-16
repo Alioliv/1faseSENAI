@@ -52,17 +52,15 @@ const cursos = [
     { nome: "Excel", cargaHoraria: 20 }
     ];
     
-    const cursosAtualizados = cursos.map(curso => {
+    // Atualizando a carga horária com 20% de bônus para cursos com mais de 40h
+const cursosAtualizados = cursos.map(curso => {
     if (curso.cargaHoraria > 40) {
-    return {
-    ...curso,
-    cargaHoraria: curso.cargaHoraria * 1.2
-    };
+        curso.cargaHoraria += curso.cargaHoraria * 0.2; // adicionando 20% à carga horária
     }
     return curso;
-    });
-    
-    console.log(cursosAtualizados);
+});
+
+console.log(cursosAtualizados);
     
 //5. Verificação de permissões Verificar:
 //• i. Se ao menos um usuário é admin
@@ -104,7 +102,10 @@ const cursoD = [
     // "Curso não encontrado"
 
 
-    // 7 
+    // 7 7. Listar tarefas pendentes Capacidades(1, 2, 3, 4, 6)
+//● Dado um array de atividades, onde cada atividade contém o nome e o status de conclusão, crie uma
+//nova lista com a descrição das atividades que ainda não foram finalizadas, no formato "Ação
+//necessária: [nome da atividade]".
 
     const tarefas = [
         { nome: 'Fazer compras', concluido: false },
