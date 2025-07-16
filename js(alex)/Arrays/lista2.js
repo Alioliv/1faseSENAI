@@ -1,20 +1,42 @@
 //1. Crie um array com 6 cores e exiba apenas as que começam com a letra "A".
 const cores = ["rosa", "roxo", "azul", "cinza"]
+const coresA = cores.filter(cor => cor.toLowerCase().startsWith("a"));//verifica se uma palavra (string) começa com um determinado caractere ou grupo de caracteres. retorna true ou false
+
+console.log(coresA);
 
 //2. Dado um array de números, multiplique todos os valores por 3 usando .map().
 const num =[ 1,2,3,4,5]
+const multiplicando = num.map(n => n * 3)
+
+console.log(multiplicando)
 
 //3. Filtre os nomes de um array que começam com a letra "M".
 const nomes =["ana","julia","clara","maria"]
+const nomesM = nomes.filter(nome => nome.toLocaleLowerCase().startsWith('m'))
+console.log(nomesM)
+
 
 //4. Usando .reduce(), calcule a multiplicação de todos os números de um array.
 const mul = [3,4,5,6,7]
+const mult = mul.map(n => n * n);
+const total = mult.reduce((acc, m)=> acc + m ,0)
+
+console.log(total)
 
 //5. Verifique qual é o segundo menor número de um array.
-const arry = [2,3,4,5,6]
+const arry = [2,3,4,5,6]  
+// 1. Cria uma cópia do array
+// 2. Ordena do menor para o maior
+// 3. Pega o segundo item (índice 1)
+const segundoMenor = [...arry].sort((a, b) => a - b)[1];
+
+console.log(segundoMenor);
 
 //6. Crie uma função que retorna apenas os elementos ímpares de um array.
 const arry2 =[1,2,3,4,5,6]
+const impares = arry2.filter(valor => valor % 2 !== 0)
+
+console.log(impares)
 
 //7. Inverta a ordem das palavras em cada string de um array.
 const palavras = ["um","dois","tres"]
